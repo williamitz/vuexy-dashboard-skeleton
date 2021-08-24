@@ -8,6 +8,7 @@ import { AdminComponentsModule } from '../../adminComponents/admin-components.mo
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PerfectScrollbarConfigInterface, PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
 import { AcartonComponent } from 'src/app/pages/adminPages/acarton/acarton.component';
+import { AuserComponent } from 'src/app/pages/adminPages/auser/auser.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     suppressScrollX: true
@@ -17,7 +18,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     declarations: [
         AhomeComponent,
         AsettingsComponent,
-        AcartonComponent
+        AcartonComponent,
+        AuserComponent
     ],
     imports: [ 
         CommonModule,

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
-import * as $ from 'jquery';
+import * as feather from 'feather-icons';
+
 
 
 @Component({
@@ -24,8 +25,9 @@ export class AsidebarComponent implements OnInit {
   }
 
   onShowHideMenu() {
-    console.log('click');
+
     this.collapSed = !this.collapSed;
+    feather.replace();
     // $('#bodyAdmin').className = this.collapSed 
     // ? 'pace-done vertical-layout vertical-menu-modern content-left-sidebar navbar-floating footer-static menu-collapsed'
     // : 'vertical-layout vertical-menu-modern  navbar-floating footer-static';
